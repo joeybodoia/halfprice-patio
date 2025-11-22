@@ -1,3 +1,5 @@
+import logo from "./assets/half-price-patio-logo.svg";
+
 function App() {
   return (
     <div className="min-h-screen bg-black">
@@ -5,8 +7,13 @@ function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Left side - Brand */}
-          <div className="text-white text-xl font-light tracking-wider">
-            Half-price patio
+          <div className="flex items-center gap-3 text-white">
+            <img
+              src={logo}
+              alt="Half-Price Patio logo"
+              className="w-12 h-12 object-contain drop-shadow"
+            />
+            <span className="text-xl font-light tracking-wider">Half-Price Patio</span>
           </div>
 
           {/* Right side - Links */}

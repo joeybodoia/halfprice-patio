@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="256" cy="256" r="256" fill="#F6F1EA"/>
+  <circle cx="382" cy="148" r="60" fill="#D2B47B" fill-opacity="0.9"/>
+  <path d="M261 168C243 139 214 126 196 126C190 138 192 150 196 160C184 154 173 151 164 153C168 172 184 186 199 194C180 193 163 198 154 206C169 217 187 222 203 222C193 230 186 240 182 252C202 252 223 243 238 232" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M269 168C287 139 316 126 334 126C340 138 338 150 334 160C346 154 357 151 366 153C362 172 346 186 331 194C350 193 367 198 376 206C361 217 343 222 327 222C337 230 344 240 348 252C328 252 307 243 292 232" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M265 224V374" stroke="#1B1B1B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M262 376C262 378.209 259.985 384.696 262 387C264.015 389.304 270.802 388.725 272 388C273.198 387.275 272.631 380.512 272 378" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round"/>
+  <text x="256" y="390" text-anchor="middle" fill="#121212" font-family="'Playfair Display', 'Times New Roman', serif" font-size="64" font-weight="300" letter-spacing="1">Half-Price</text>
+  <text x="256" y="444" text-anchor="middle" fill="#121212" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="56" font-weight="400">Patio</text>
+</svg>
