@@ -52,7 +52,10 @@ function App() {
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-light text-white tracking-wider mb-6">
+          <h1
+            className="text-6xl md:text-7xl lg:text-8xl font-normal text-white tracking-wider mb-6"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
             Affordable Outdoor Living
           </h1>
           <div className="w-24 h-px bg-white/60 mx-auto"></div>
@@ -62,8 +65,16 @@ function App() {
       {/* Social Icons */}
       <section className="bg-black py-12 flex justify-center">
         <div className="flex flex-col items-center gap-6">
-          <p className="text-white text-5xl tracking-wider">Now Open!</p>
-          <p className="text-white/80 text-2xl">
+          <p
+            className="text-white text-5xl tracking-wider"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Now Open!
+          </p>
+          <p
+            className="text-white/80 text-2xl"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
             Click{' '}
             <a
               href="https://provider.macu.com/customer?t=QXQ3KjF0dUJXSXBhM0lPWDFIZVhTMHExdWlTUGNlTUttd1FJSTlPdUduV3g3SCpTRE9iMzJnRTRWRFdmQjVBSTRQQnQzUklzNTJIR3djSXVFR3lieUNsUjBoVTk1RXV5dG1xM25OdUJEWUlibCoxKjFzT2w4eXgqMTR4OVR2RGQ5SzdjQmNXY2VCNTJrZHI1bjdnOFhNZWgxOWM2Y3hVZWNtUWNSek9zKjFkeTJDbHZFRXZGYmRRQUM0d2l2Q1FidFBFVTA5TE14TUpYTGw4KjFKbEtyeHRjUHlmWHc9PQ=="
