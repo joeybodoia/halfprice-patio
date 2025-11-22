@@ -4,16 +4,16 @@ function App() {
   return (
     <div className="min-h-screen bg-black">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+        <div className="w-full px-4 sm:px-6 py-4 flex items-center justify-between">
           {/* Left side - Brand */}
-          <div className="flex items-center gap-3 text-white">
+          <div className="flex items-center gap-3 text-white font-medium tracking-wider">
             <img
               src={logo}
               alt="Half-Price Patio logo"
               className="w-12 h-12 object-contain drop-shadow"
             />
-            <span className="text-xl font-light tracking-wider">Half-Price Patio</span>
+            <span className="text-xl uppercase">HALF-PRICE PATIO</span>
           </div>
 
           {/* Right side - Links */}
@@ -22,17 +22,17 @@ function App() {
               href="https://www.patioresorts.com/"
               target="_blank"
               rel="noreferrer"
-              className="text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide font-light"
+              className="text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide font-medium uppercase"
             >
-              Patio Resorts
+              PATIO RESORTS
             </a>
             <a
               href="https://www.ashleyfurniture.com/c/outdoor/"
               target="_blank"
               rel="noreferrer"
-              className="text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide font-light"
+              className="text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide font-medium uppercase"
             >
-              Ashley Furniture
+              ASHLEY FURNITURE
             </a>
           </div>
         </div>
@@ -62,8 +62,8 @@ function App() {
       {/* Social Icons */}
       <section className="bg-black py-12 flex justify-center">
         <div className="flex flex-col items-center gap-6">
-          <p className="text-white text-2xl tracking-wider">Now Open!</p>
-          <p className="text-white/80 text-base">
+          <p className="text-white text-5xl tracking-wider">Now Open!</p>
+          <p className="text-white/80 text-2xl">
             Click{' '}
             <a
               href="https://provider.macu.com/customer?t=QXQ3KjF0dUJXSXBhM0lPWDFIZVhTMHExdWlTUGNlTUttd1FJSTlPdUduV3g3SCpTRE9iMzJnRTRWRFdmQjVBSTRQQnQzUklzNTJIR3djSXVFR3lieUNsUjBoVTk1RXV5dG1xM25OdUJEWUlibCoxKjFzT2w4eXgqMTR4OVR2RGQ5SzdjQmNXY2VCNTJrZHI1bjdnOFhNZWgxOWM2Y3hVZWNtUWNSek9zKjFkeTJDbHZFRXZGYmRRQUM0d2l2Q1FidFBFVTA5TE14TUpYTGw4KjFKbEtyeHRjUHlmWHc9PQ=="
