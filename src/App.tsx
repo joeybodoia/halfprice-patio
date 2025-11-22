@@ -62,7 +62,19 @@ function App() {
       {/* Social Icons */}
       <section className="bg-black py-12 flex justify-center">
         <div className="flex flex-col items-center gap-6">
-          <p className="text-white text-xl tracking-wider">Now Open!</p>
+          <p className="text-white text-2xl tracking-wider">Now Open!</p>
+          <p className="text-white/80 text-base">
+            Click{' '}
+            <a
+              href="https://provider.macu.com/customer?t=QXQ3KjF0dUJXSXBhM0lPWDFIZVhTMHExdWlTUGNlTUttd1FJSTlPdUduV3g3SCpTRE9iMzJnRTRWRFdmQjVBSTRQQnQzUklzNTJIR3djSXVFR3lieUNsUjBoVTk1RXV5dG1xM25OdUJEWUlibCoxKjFzT2w4eXgqMTR4OVR2RGQ5SzdjQmNXY2VCNTJrZHI1bjdnOFhNZWgxOWM2Y3hVZWNtUWNSek9zKjFkeTJDbHZFRXZGYmRRQUM0d2l2Q1FidFBFVTA5TE14TUpYTGw4KjFKbEtyeHRjUHlmWHc9PQ=="
+              className="text-white underline hover:text-white/60"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>{' '}
+            for financing
+          </p>
           <div className="flex items-center gap-10 text-white/80">
             <a
               href="https://www.facebook.com/people/Half-Price-Patio/61577871245882/"
