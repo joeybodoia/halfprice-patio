@@ -1,4 +1,8 @@
 import logo from "./assets/half-price-patio-logo.svg";
+import heroBanner from "./assets/hero_banner.jpg";
+
+
+
 
 function App() {
   return (
@@ -44,7 +48,7 @@ function App() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+            backgroundImage: `url(${heroBanner})`,
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
