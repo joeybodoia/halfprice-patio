@@ -1,4 +1,4 @@
-import logo from "./assets/half-price-patio-logo.svg";
+import logo from "./assets/half_price_patio_logo.png";
 import heroBanner from "./assets/hero_banner.jpg";
 
 
@@ -15,7 +15,7 @@ function App() {
             <img
               src={logo}
               alt="Half-Price Patio logo"
-              className="w-12 h-12 object-contain drop-shadow"
+              className="w-12 h-12 rounded-full object-cover drop-shadow"
             />
             <span className="text-xl uppercase">HALF-PRICE PATIO</span>
           </div>
@@ -55,9 +55,18 @@ function App() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-6 flex flex-col items-center">
+          <div className="mb-6">
+            <div className="w-[13.5rem] h-[13.5rem] md:w-[15.5rem] md:h-[15.5rem] rounded-full flex items-center justify-center overflow-hidden bg-[#f0ebe5] shadow-lg shadow-black/30">
+              <img
+                src={logo}
+                alt="Half-Price Patio logo"
+                className="w-[10rem] h-[10rem] md:w-[11.5rem] md:h-[11.5rem] object-contain"
+              />
+            </div>
+          </div>
           <h1
-            className="text-6xl md:text-7xl lg:text-8xl font-normal text-white tracking-wider mb-6"
+            className="text-5xl md:text-6xl lg:text-7xl font-normal text-white tracking-wider mb-6"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Affordable Outdoor Living
@@ -76,13 +85,13 @@ function App() {
             Now Open!
           </p>
           <p
-            className="text-white/80 text-2xl"
+            className="text-white/80 text-lg"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Click{' '}
             <a
               href="https://provider.macu.com/customer?t=QXQ3KjF0dUJXSXBhM0lPWDFIZVhTMHExdWlTUGNlTUttd1FJSTlPdUduV3g3SCpTRE9iMzJnRTRWRFdmQjVBSTRQQnQzUklzNTJIR3djSXVFR3lieUNsUjBoVTk1RXV5dG1xM25OdUJEWUlibCoxKjFzT2w4eXgqMTR4OVR2RGQ5SzdjQmNXY2VCNTJrZHI1bjdnOFhNZWgxOWM2Y3hVZWNtUWNSek9zKjFkeTJDbHZFRXZGYmRRQUM0d2l2Q1FidFBFVTA5TE14TUpYTGw4KjFKbEtyeHRjUHlmWHc9PQ=="
-              className="text-white underline hover:text-white/60"
+              className="text-red-500 underline hover:text-red-400"
               target="_blank"
               rel="noreferrer"
             >
