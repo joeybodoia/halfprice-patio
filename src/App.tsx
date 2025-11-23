@@ -16,11 +16,11 @@ function App() {
               alt="Half-Price Patio logo"
               className="w-12 h-12 rounded-full object-cover drop-shadow"
             />
-            <span className="text-xl uppercase">HALF-PRICE PATIO</span>
+            <span className="text-lg sm:text-xl uppercase">HALF-PRICE PATIO</span>
           </div>
 
           {/* Right side - Links */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 sm:gap-8 text-xs sm:text-sm">
             <a
               href="https://www.patioresorts.com/"
               target="_blank"
@@ -65,7 +65,7 @@ function App() {
             </div>
           </div>
           <h1
-            className="text-5xl md:text-6xl lg:text-7xl font-normal text-white tracking-wider mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-white tracking-wider mb-6"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Affordable Outdoor Living
@@ -78,13 +78,13 @@ function App() {
       <section className="bg-black py-12 flex justify-center">
         <div className="flex flex-col items-center gap-6">
           <p
-            className="text-white text-5xl tracking-wider"
+            className="text-white text-4xl sm:text-5xl tracking-wider"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Now Open!
           </p>
           <p
-            className="text-white/80 text-lg"
+            className="text-white/80 text-base sm:text-lg text-center"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Click{' '}
