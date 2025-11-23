@@ -20,23 +20,32 @@ function App() {
           </div>
 
           {/* Right side - Links */}
-          <div className="flex items-center gap-4 sm:gap-8 text-xs sm:text-sm">
-            <a
-              href="https://www.patioresorts.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide font-medium uppercase"
-            >
-              PATIO RESORTS
-            </a>
-            <a
-              href="https://www.ashleyfurniture.com/c/outdoor/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-white/80 hover:text-white transition-colors duration-300 text-sm tracking-wide font-medium uppercase"
-            >
-              ASHLEY FURNITURE
-            </a>
+          <div className="relative text-xs sm:text-sm">
+            <details className="group">
+              <summary className="flex items-center gap-2 text-white/80 hover:text-white cursor-pointer uppercase tracking-wide font-medium">
+                Shop Products
+                <span className="text-white/60 group-open:rotate-180 transition-transform duration-200">▼</span>
+              </summary>
+              <div className="absolute right-0 mt-3 w-44 bg-black/95 border border-white/10 rounded-md shadow-lg shadow-black/40 overflow-hidden">
+                <a
+                  href="https://www.patioresorts.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 transition-colors uppercase tracking-wide"
+                >
+                  Patio Resorts
+                </a>
+                <div className="h-px bg-white/10" />
+                <a
+                  href="https://www.ashleyfurniture.com/c/outdoor/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block px-4 py-3 text-white/80 hover:text-white hover:bg-white/5 transition-colors uppercase tracking-wide"
+                >
+                  Ashley Furniture
+                </a>
+              </div>
+            </details>
           </div>
         </div>
       </nav>
