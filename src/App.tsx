@@ -1,10 +1,53 @@
+import { useState, type ChangeEvent, type FormEvent } from "react";
 import logo from "./assets/half_price_patio_logo.png";
 import heroBanner from "./assets/hero_banner.jpg";
 
-
-
+type SubmitStatus = "idle" | "loading" | "success" | "error";
 
 function App() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState<SubmitStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.error || "Failed to send message.");
+      }
+
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(
+        error instanceof Error ? error.message : "Something went wrong."
+      );
+    }
+  };
+
   return (
     <div className="min-h-screen bg-black">
       {/* Navigation Bar */}
@@ -156,7 +199,7 @@ function App() {
               <h3 className="text-lg font-semibold tracking-wide">Drop us a line!</h3>
               <form
                 className="space-y-6"
-                onSubmit={(event) => event.preventDefault()}
+                onSubmit={handleSubmit}
               >
                 <div className="space-y-2">
                   <label className="text-sm uppercase tracking-[0.2em] text-white/70">
@@ -166,6 +209,8 @@ function App() {
                     type="text"
                     name="name"
                     placeholder="Your name"
+                    value={form.name}
+                    onChange={handleChange}
                     className="w-full rounded-md bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/50 focus:border-white/50 focus:outline-none focus:ring-1 focus:ring-white/40 transition"
                   />
                 </div>
@@ -179,6 +224,8 @@ function App() {
                     name="email"
                     placeholder="you@example.com"
                     required
+                    value={form.email}
+                    onChange={handleChange}
                     className="w-full rounded-md bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/50 focus:border-white/50 focus:outline-none focus:ring-1 focus:ring-white/40 transition"
                   />
                 </div>
@@ -191,16 +238,26 @@ function App() {
                     name="message"
                     placeholder="Tell us what you're looking for"
                     rows={4}
+                    value={form.message}
+                    onChange={handleChange}
                     className="w-full rounded-md bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/50 focus:border-white/50 focus:outline-none focus:ring-1 focus:ring-white/40 transition"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full sm:w-auto uppercase tracking-[0.25em] bg-white text-black px-8 py-3 rounded-md font-semibold transition duration-300 hover:bg-white/90"
+                  disabled={status === "loading"}
+                  className="w-full sm:w-auto uppercase tracking-[0.25em] bg-white text-black px-8 py-3 rounded-md font-semibold transition duration-300 hover:bg-white/90 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send
+                  {status === "loading" ? "Sending..." : "Send"}
                 </button>
+
+                {status === "success" && (
+                  <p className="text-green-400 text-sm">Message sent! We&apos;ll get back to you soon.</p>
+                )}
+                {status === "error" && (
+                  <p className="text-red-400 text-sm">Error: {errorMessage}</p>
+                )}
               </form>
             </div>
 
