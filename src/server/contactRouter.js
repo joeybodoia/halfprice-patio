@@ -40,7 +40,7 @@ router.post("/api/contact", async (req, res) => {
     ].join("\n");
 
     await transporter.sendMail({
-      to: "jbodoia@gmail.com",
+      to: "sales@halfprice-patio.com",
       from: `"Half-Price Patio Contact Form" <${SMTP_USER}>`,
       replyTo: email,
       subject: `New inquiry from: ${name}`.slice(0, 120),
