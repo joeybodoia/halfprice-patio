@@ -37,14 +37,11 @@ export default function ContactForm({ className = '' }: ContactFormProps) {
         }),
       });
 
-      let data;
-      try {
-        data = await response.json();
-      } catch (jsonError) {
-        throw new Error('Server is not responding properly. Please try again later.');
-      }
+      const contentType = response.headers.get("content-type");
+      const isJson = contentType?.includes("application/json");
+      const data = isJson ? await response.json() : {};
 
-      if (response.ok && data.ok) {
+      if (response.ok && (data.ok || isJson === false)) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
         // Reset success message after 5 seconds
