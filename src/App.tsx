@@ -236,6 +236,50 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <section className="bg-black pb-20 px-4">
+        <div className="max-w-6xl mx-auto space-y-6">
+          <div className="text-center text-white space-y-3">
+            <h3
+              className="text-3xl md:text-4xl tracking-wider"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              Find Us
+            </h3>
+            <p className="text-white/70">
+              7825 East Evans Road, Suite 400, Scottsdale, AZ, USA
+            </p>
+          </div>
+          <div className="relative w-full overflow-hidden rounded-lg border border-white/10 shadow-lg shadow-black/30">
+            <iframe
+              title="Half-Price Patio location"
+              src="https://www.google.com/maps?q=7825+East+Evans+Road,+Suite+400,+Scottsdale,+AZ,+USA&output=embed"
+              loading="lazy"
+              allowFullScreen
+              className="w-full h-[360px] md:h-[520px] grayscale-[30%] hover:grayscale-0 transition duration-500"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black px-4 pb-10">
+        <div className="max-w-6xl mx-auto text-white/80 text-sm space-y-3">
+          <p>Copyright © 2025 Half-Price Patio, LLC. All Rights Reserved.</p>
+          <p>Address: 7825 Evans Road, Suite 400 • Scottsdale, AZ 85260</p>
+          <p>Phone: 480-915-1511</p>
+          <div className="space-y-1">
+            <p>Email:</p>
+            <a href="mailto:sales@halfprice-patio.com" className="block text-white hover:text-white/70 transition">
+              sales@halfprice-patio.com
+            </a>
+            <a href="mailto:admin@halfprice-patio.com" className="block text-white hover:text-white/70 transition">
+              admin@halfprice-patio.com
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
