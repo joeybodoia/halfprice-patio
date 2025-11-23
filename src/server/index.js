@@ -18,8 +18,8 @@ app.use(contactRouter);
 const distPath = path.resolve(__dirname, "../../dist");
 app.use(express.static(distPath));
 
-// SPA fallback
-app.get("*", (_req, res) => {
+// SPA fallback - match anything not caught above
+app.use((_req, res) => {
   res.sendFile(path.join(distPath, "index.html"));
 });
 
