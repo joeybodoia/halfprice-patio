@@ -126,6 +126,116 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <section className="bg-black py-16 px-4">
+        <div className="max-w-6xl mx-auto text-white space-y-12">
+          <div className="text-center space-y-3">
+            <h2
+              className="text-4xl md:text-5xl tracking-wider"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              Contact Us
+            </h2>
+            <p className="text-white/70 text-lg">
+              Questions about our collections or financing? Send us a note and we&apos;ll get back to you.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10 items-start">
+            <div className="space-y-6">
+              <h3 className="text-lg font-semibold tracking-wide">Drop us a line!</h3>
+              <form
+                className="space-y-6"
+                onSubmit={(event) => event.preventDefault()}
+              >
+                <div className="space-y-2">
+                  <label className="text-sm uppercase tracking-[0.2em] text-white/70">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    className="w-full rounded-md bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/50 focus:border-white/50 focus:outline-none focus:ring-1 focus:ring-white/40 transition"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm uppercase tracking-[0.2em] text-white/70">
+                    Email*
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    className="w-full rounded-md bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/50 focus:border-white/50 focus:outline-none focus:ring-1 focus:ring-white/40 transition"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm uppercase tracking-[0.2em] text-white/70">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    placeholder="Tell us what you're looking for"
+                    rows={4}
+                    className="w-full rounded-md bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/50 focus:border-white/50 focus:outline-none focus:ring-1 focus:ring-white/40 transition"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full sm:w-auto uppercase tracking-[0.25em] bg-white text-black px-8 py-3 rounded-md font-semibold transition duration-300 hover:bg-white/90"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+
+            <div className="space-y-8">
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold">Better yet, see us in person!</h3>
+                <p className="text-white/70 leading-relaxed">
+                  We love our customers! Feel free to visit our showroom during normal business hours or contact us for an appointment. Explore our selection of patio sets, fire pits, and other outdoor decor to enhance your outdoor living and dining experience!
+                </p>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="text-xl font-semibold">Half-Price Patio</h3>
+                <p className="text-white/80">7825 East Evans Road, Suite 400, Scottsdale, AZ, USA</p>
+                <a href="tel:4805731312" className="block text-white hover:text-white/70 transition">
+                  480-573-1312
+                </a>
+                <a href="mailto:sales@halfprice-patio.com" className="block text-white hover:text-white/70 transition">
+                  sales@halfprice-patio.com
+                </a>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold">Hours</h3>
+                <details className="bg-white/5 border border-white/10 rounded-md px-4 py-3 text-white/80">
+                  <summary className="cursor-pointer flex items-center justify-between text-white font-medium">
+                    View hours
+                    <span className="text-white/60 text-sm">v</span>
+                  </summary>
+                  <div className="mt-3 space-y-2">
+                    <p>Mon: By Appointment</p>
+                    <p>Tues: By Appointment</p>
+                    <p>Wed: By Appointment</p>
+                    <p>Thu: 10:00am - 5:00pm</p>
+                    <p>Fri: 10:00am - 5:00pm</p>
+                    <p>Sat: 10:00am - 5:00pm</p>
+                    <p>Sun: 10:00am - 4:00pm</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
