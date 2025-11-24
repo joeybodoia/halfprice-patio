@@ -71,11 +71,11 @@ function App() {
             Affordable Outdoor Living
           </h1>
           <div className="mb-6">
-            <div className="w-[13.5rem] h-[13.5rem] md:w-[15.5rem] md:h-[15.5rem] rounded-full flex items-center justify-center overflow-hidden bg-[#f0ebe5] shadow-lg shadow-black/30">
+            <div className="w-[11rem] h-[11rem] md:w-[13.5rem] md:h-[13.5rem] lg:w-[15.5rem] lg:h-[15.5rem] rounded-full flex items-center justify-center overflow-hidden bg-[#f0ebe5] shadow-lg shadow-black/30">
               <img
                 src={logo}
                 alt="Half-Price Patio logo"
-                className="w-[10rem] h-[10rem] md:w-[11.5rem] md:h-[11.5rem] object-contain"
+                className="w-[8.5rem] h-[8.5rem] md:w-[11rem] md:h-[11rem] lg:w-[12.5rem] lg:h-[12.5rem] object-contain"
               />
             </div>
           </div>
