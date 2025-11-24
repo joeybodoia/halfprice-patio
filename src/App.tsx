@@ -51,7 +51,7 @@ function App() {
       </nav>
 
       {/* Hero Banner */}
-      <section className="relative h-[75vh] flex items-center justify-center">
+      <section className="relative h-[75vh] flex items-center justify-center pt-24 sm:pt-28">
         {/* Background Image with Overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -64,6 +64,12 @@ function App() {
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-6 flex flex-col items-center">
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white tracking-wider mb-6"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Affordable Outdoor Living
+          </h1>
           <div className="mb-6">
             <div className="w-[13.5rem] h-[13.5rem] md:w-[15.5rem] md:h-[15.5rem] rounded-full flex items-center justify-center overflow-hidden bg-[#f0ebe5] shadow-lg shadow-black/30">
               <img
@@ -73,13 +79,13 @@ function App() {
               />
             </div>
           </div>
-          <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-white tracking-wider mb-6"
+          <p
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white tracking-wider"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Affordable Outdoor Living
-          </h1>
-          <div className="w-24 h-px bg-white/60 mx-auto"></div>
+            Now Open!
+          </p>
+          <div className="w-24 h-px bg-white/60 mx-auto mt-4"></div>
         </div>
       </section>
 
@@ -87,13 +93,13 @@ function App() {
       <section className="bg-black py-12 flex justify-center">
         <div className="flex flex-col items-center gap-6">
           <p
-            className="text-white text-4xl sm:text-5xl tracking-wider"
+            className="text-white/90 text-4xl sm:text-5xl"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Now Open!
+            Financing Available!
           </p>
           <p
-            className="text-white/80 text-base sm:text-lg text-center"
+            className="text-white/80 text-xl sm:text-2xl text-center"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             Click{' '}
@@ -105,7 +111,7 @@ function App() {
             >
               here
             </a>{' '}
-            for financing
+            to start your application
           </p>
           <div className="flex items-center gap-10 text-white/80">
             <a
@@ -238,7 +244,7 @@ function App() {
         <div className="max-w-6xl mx-auto text-white/80 text-sm space-y-3">
           <p>Copyright © 2025 Half-Price Patio, LLC. All Rights Reserved.</p>
           <p>Address: 7825 Evans Road, Suite 400 • Scottsdale, AZ 85260</p>
-          <p>Phone: 480-915-1511</p>
+          <p>Phone: 480-573-1312</p>
           <div className="space-y-1">
             <p>Email:</p>
             <a href="mailto:sales@halfprice-patio.com" className="block text-white hover:text-white/70 transition">
