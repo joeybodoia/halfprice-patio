@@ -198,13 +198,13 @@ function App() {
                     <span className="text-white/60 text-sm">v</span>
                   </summary>
                   <div className="mt-3 space-y-2">
-                    <p>Mon: By Appointment</p>
-                    <p>Tues: By Appointment</p>
-                    <p>Wed: By Appointment</p>
-                    <p>Thu: 10:00am - 5:00pm</p>
-                    <p>Fri: 10:00am - 5:00pm</p>
-                    <p>Sat: 10:00am - 5:00pm</p>
-                    <p>Sun: 10:00am - 4:00pm</p>
+                    <p>Mon: By Appointment Only</p>
+                    <p>Tues: By Appointment Only</p>
+                    <p>Wed: By Appointment Only</p>
+                    <p>Thu: By Appointment Only</p>
+                    <p>Fri: By Appointment Only</p>
+                    <p>Sat: By Appointment Only</p>
+                    <p>Sun: By Appointment Only</p>
                   </div>
                 </details>
               </div>
