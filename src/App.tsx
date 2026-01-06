@@ -1,11 +1,53 @@
+import { useEffect, useState } from "react";
 import logo from "./assets/half_price_patio_logo.png";
 import heroBanner from "./assets/hero_banner.jpg";
 
 import ContactForm from "./components/ContactForm";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    setIsModalOpen(true);
+  }, []);
+
   return (
     <div className="min-h-screen bg-black">
+      {isModalOpen && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/70 px-4 py-10">
+          <div className="relative w-full max-w-lg rounded-2xl border border-black/10 bg-white p-8 text-black shadow-2xl shadow-black/40">
+            <button
+              type="button"
+              onClick={() => setIsModalOpen(false)}
+              aria-label="Close popup"
+              className="absolute right-4 top-4 text-black/60 transition hover:text-black"
+            >
+              <span className="text-2xl leading-none">✕</span>
+            </button>
+            <div className="space-y-4 text-center">
+              <p
+                className="text-xs uppercase tracking-[0.35em] text-black/50"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                Next Event
+              </p>
+              <h2
+                className="text-3xl sm:text-4xl tracking-wider"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                Maricopa Country Home Show
+              </h2>
+              <p className="text-lg text-black/80">
+                <span className="font-semibold">Dates:</span> 1/9 - 1/11
+              </p>
+              <p className="text-lg text-black/80">
+                <span className="font-semibold">Location:</span> Arizona State
+                Fairgrounds, 1826 W McDowell Rd, Phoenix, AZ 85007
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10" style={{ fontFamily: "'Montserrat', sans-serif" }}>
         <div className="w-full px-4 sm:px-6 py-4 flex items-center justify-between">
