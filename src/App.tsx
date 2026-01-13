@@ -35,14 +35,16 @@ function App() {
                 className="text-3xl sm:text-4xl tracking-wider"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                Maricopa Country Home Show
+                Maricopa County
+                <br />
+                Home Show
               </h2>
               <p className="text-lg text-black/80">
-                <span className="font-semibold">Dates:</span> 1/9 - 1/11
+                <span className="font-semibold">Dates:</span> March 6-8
               </p>
               <p className="text-lg text-black/80">
-                <span className="font-semibold">Location:</span> Arizona State
-                Fairgrounds, 1826 W McDowell Rd, Phoenix, AZ 85007
+                <span className="font-semibold">Location:</span> State Farm
+                Stadium
               </p>
             </div>
           </div>
@@ -203,7 +205,7 @@ function App() {
               Contact Us
             </h2>
             <p className="text-white/70 text-lg">
-              Questions about our collections or financing? Send us a note and we&apos;ll get back to you.
+              Contact us to schedule a private product showing or schedule an in home consultation
             </p>
           </div>
 
